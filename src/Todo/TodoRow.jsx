@@ -76,12 +76,13 @@ function TodoRow() {
 
     const editItme = (index) => {
 
-        const item_todo_edited = item.find((curElem) => {
+        const item_todo_edited = itmes.find((curElem) => {
             return curElem.id === index;
         });
-        setInputData(item_todo_edited);
+        setInputData(item_todo_edited.name);
         setIsEditItem(index);
         setToggleButton(true);
+        console.log("welcome to my world sumit saini")
     };
 
 
